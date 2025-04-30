@@ -19,4 +19,8 @@ public class PersonaService {
     public List<Persona> listarPersonas(){
         return personaRepository.readAll();
     }
+
+    public Persona buscarxId(int id){
+        return personaRepository.read(id);
+    }
 }
